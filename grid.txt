@@ -1,0 +1,6 @@
+
+
+DesiredCapabilities capability = DesiredCapabilities.firefox();
+capability.setBrowserName("firefox");
+capability.setPlatform(Platform.LINUX);
+WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.109:4444/wd/hub"),capability);
